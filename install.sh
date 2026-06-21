@@ -82,15 +82,21 @@ pkg install -y proot-distro
 
 clear
 echo
-echo -ne "${P}Alias (e.g. ubuntu) > "
-read ALIAS_NAME
+echo -ne "${P}Distro (e.g. ubuntu:24.04) > "
+read IMAGE
 
-if [ -z "$ALIAS_NAME" ]; then
-    echo -e "${P}[!] No alias specified."
+if [ -z "$IMAGE" ]; then
+    echo -e "${P}[!] No distro specified."
     exit 1
 fi
 
-IMAGE="$ALIAS_NAME"
+DEFAULT_NAME="${IMAGE##*/}"
+DEFAULT_NAME="${DEFAULT_NAME%%:*}"
+
+echo -ne "${P}Alias ${DIM}[${DEFAULT_NAME}]${RST} > "
+read ALIAS_NAME
+ALIAS_NAME="${ALIAS_NAME:-$DEFAULT_NAME}"
+
 INSTALL_NAME="$ALIAS_NAME"
 
 echo -e "${P}[*] Installing $IMAGE as '$INSTALL_NAME'..."
