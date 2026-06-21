@@ -24,6 +24,6 @@ curl -sL https://raw.githubusercontent.com/rynn-k/Prootx/main/install.sh -o inst
 
 After install, just run:
 ```bash
-ubuntu
+<alias>
 ```
 to log in anytime.
