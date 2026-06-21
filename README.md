@@ -5,7 +5,7 @@ Simple installer/uninstaller for Linux distros in Termux using `proot-distro`. R
 ## Usage
 
 ```bash
-curl -sL https://raw.githubusercontent.com/rynn-k/Prootx/main/install.sh -o install.sh | bash
+curl -sL https://raw.githubusercontent.com/rynn-k/Prootx/main/install.sh -o install.sh && bash install.sh
 ```
 
 ## What it does
