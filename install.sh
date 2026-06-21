@@ -99,6 +99,8 @@ ALIAS_NAME="${ALIAS_NAME:-$DEFAULT_NAME}"
 
 INSTALL_NAME="$ALIAS_NAME"
 
+clear
+echo
 echo -e "${P}[*] Installing $IMAGE as '$INSTALL_NAME'..."
 proot-distro install "$IMAGE" -n "$INSTALL_NAME" --quiet
 
