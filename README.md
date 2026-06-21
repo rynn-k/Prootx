@@ -1,3 +1,5 @@
+![Banner](https://napkinsdev.s3.us-east-1.amazonaws.com/next-s3-uploads/767790e0-516c-4cb7-97bc-8ea92d25f799/8218c6db585c.png)
+
 # Prootx
 
 Simple installer/uninstaller for Linux distros in Termux using `proot-distro`. Rootfs is stored in `$HOME` instead of `$PREFIX`.
